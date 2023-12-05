@@ -1,14 +1,14 @@
-# Puzl GitLab Pipelines Integration Terraform module
+# puzl.cloud Terraform module for GitLab Integration
 
 ## Overview
 
-This Terraform module is designed to connect your GitLab instance with [GitLab Pipelines Service](https://gitlab-pipelines.puzl.cloud) by Puzl. One Integration scopes one team or department within your organization and might enable its owner or maintainer to set up and manage runners for executing their pipeline jobs.
+This Terraform module is designed to connect your GitLab instance with [Cloud Pipelines Service](https://gitlab-pipelines.puzl.cloud) by Puzl. One Integration scopes one team or department within your organization and might enable its owner or maintainer to set up and manage runners for executing their pipeline jobs.
 
-Administrator (owner of Puzl account) creates Integrations in their Puzl root namespace, which can be found in [Puzl dashboard](https://gitlab-pipelines.puzl.cloud/dashboard/integrations) after account creation. The detailed description of the fields used in this module can be found in the related [GitLab Pipelines Integration documentation](https://gitlab-pipelines.puzl.cloud/docs/api/custom-puzl-resources/gitlab-pipelines-integration/).
+Administrator (owner of Puzl account) creates Integrations in their Puzl root namespace, which can be found in [Puzl dashboard](https://gitlab-pipelines.puzl.cloud/dashboard/integrations) after account creation. The detailed description of the fields used in this module can be found in the related [GitLab Integration documentation](https://gitlab-pipelines.puzl.cloud/docs/api/custom-puzl-resources/gitlab-pipelines-integration/).
 
 ## Features
 
-- Management of GitLab Pipelines Integrations.
+- Management of GitLab Integrations.
 - Outputs the name of Claim Namespace where the GitLab Runners can be claimed.
 
 ## Requirements
