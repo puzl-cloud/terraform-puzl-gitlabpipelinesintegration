@@ -1,6 +1,4 @@
-# Example Usage of GitLab Pipelines Integration Module
-
-This example demonstrates how to use the GitLab Pipelines Integration Terraform module.
+# Example Usage of puzl.cloud module for GitLab Integration
 
 ## Usage
 
