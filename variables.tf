@@ -24,3 +24,12 @@ variable "service_account_permissions" {
     manage_claim_namespace_secrets   = false
   }
 }
+
+variable "resources" {
+  description = "Defines the settings for managing resources of pipeline jobs."
+  type = object({
+    persistentStorage = optional(object({
+      cacheRetentionTime = optional(number)
+    }))
+  })
+}

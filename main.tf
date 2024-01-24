@@ -12,6 +12,11 @@ resource "kubernetes_manifest" "gitlabpipelinesintegration" {
         readPipelineNamespaceSecrets = var.service_account_permissions.read_pipeline_namespace_secrets
         manageClaimNamespaceSecrets = var.service_account_permissions.manage_claim_namespace_secrets
       }
+      resources = {
+        persistentStorage = {
+          cacheRetentionTime = try(var.resources.persistentStorage.cacheRetentionTime, 30)
+        }
+      }
     }
   }
 
