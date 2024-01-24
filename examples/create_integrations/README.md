@@ -4,7 +4,7 @@
 
 ### Apply
 
-1. Create credetials on https://gitlab-pipelines.puzl.cloud/dashboard
+1. Create credetials on https://console.puzl.cloud.
 2. Update the `main.tf` file with your specific details, such as the GitLab URL and desired namespace.
 3. Set `KUBE_HOST` and `KUBE_TOKEN` enviroment varibale.
 4. Initialize the Terraform environment:
