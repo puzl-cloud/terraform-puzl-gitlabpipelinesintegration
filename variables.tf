@@ -32,4 +32,5 @@ variable "resources" {
       cacheRetentionTime = optional(number)
     }))
   })
+  default = {}
 }

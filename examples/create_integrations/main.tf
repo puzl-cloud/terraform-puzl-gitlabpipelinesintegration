@@ -8,7 +8,7 @@ module "integration" {
   source     = "puzl-cloud/gitlabpipelinesintegration/puzl"
   
   name       = local.integration_name
-  namespace  = local.integration_namespace
+  namespace  = local.root_namespace
   gitlab_url = local.gitlab_url
   service_account_permissions = {
     read_job_namespace_secrets = true
