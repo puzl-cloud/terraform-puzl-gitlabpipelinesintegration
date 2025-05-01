@@ -1,6 +1,6 @@
 resource "kubernetes_manifest" "gitlabpipelinesintegration" {
   manifest = {
-    apiVersion = "gitlab-pipelines.svcs.puzl.cloud/v1"
+    apiVersion = "gitlab-pipelines.svcs.puzl.cloud/v2"
     kind       = "GitLabPipelinesIntegration"
     metadata = {
       name      = var.name
@@ -9,7 +9,7 @@ resource "kubernetes_manifest" "gitlabpipelinesintegration" {
     spec = {
       gitlabUrl = var.gitlab_url
       serviceAccountPermissions = {
-        readPipelineNamespaceSecrets = var.service_account_permissions.read_pipeline_namespace_secrets
+        readJobNamespaceSecrets = var.service_account_permissions.read_job_namespace_secrets
         manageClaimNamespaceSecrets = var.service_account_permissions.manage_claim_namespace_secrets
       }
       resources = {

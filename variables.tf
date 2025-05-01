@@ -16,11 +16,11 @@ variable "gitlab_url" {
 variable "service_account_permissions" {
   description = "Contains capabilities of the Integration Service Account, which may be utilized for managing GitLab runners."
   type = object({
-    read_pipeline_namespace_secrets  = bool
+    read_job_namespace_secrets  = bool
     manage_claim_namespace_secrets   = bool
   })
   default = {
-    read_pipeline_namespace_secrets  = false
+    read_job_namespace_secrets  = false
     manage_claim_namespace_secrets   = false
   }
 }

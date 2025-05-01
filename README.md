@@ -34,7 +34,7 @@ module "integration" {
   namespace  = local.integration_namespace
   gitlab_url = local.gitlab_url
   service_account_permissions = {
-    read_pipeline_namespace_secrets = true
+    read_job_namespace_secrets = true
     manage_claim_namespace_secrets  = false
   }
 }
