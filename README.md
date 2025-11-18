@@ -2,9 +2,9 @@
 
 ## Overview
 
-This Terraform module is designed to connect your GitLab instance with [Cloud Pipelines Service](https://puzl.cloud/products/ci-runners-for-gitlab) by Puzl. One Integration scopes one team or department within your organization and might enable its owner or maintainer to set up and manage runners for executing their pipeline jobs.
+This Terraform module is designed to connect your GitLab instance with [Cloud Pipelines Service](https://puzl.cloud/products/run-my-job) by Puzl. One Integration scopes one team or department within your organization and might enable its owner or maintainer to set up and manage runners for executing their pipeline jobs.
 
-Administrator (owner of Puzl account) creates Integrations in their Puzl root namespace, which can be found in [Puzl dashboard](https://console.puzl.cloud/integrations) after account creation. The detailed description of the fields used in this module can be found in the related [GitLab Integration documentation](https://docs.puzl.cloud/api/ci-runners-for-gitlab/custom-puzl-resources/gitlab-pipelines-integration).
+Administrator (owner of Puzl account) creates Integrations in their Puzl root namespace, which can be found in [Puzl dashboard](https://console.puzl.cloud/integrations) after account creation. The detailed description of the fields used in this module can be found in the related [GitLab Integration documentation](https://docs.puzl.cloud/api/run-my-job/gitlab-pipelines/gitlab-pipelines-integration).
 
 ## Features
 
@@ -14,7 +14,7 @@ Administrator (owner of Puzl account) creates Integrations in their Puzl root na
 ## Requirements
 
 - Terraform v1.3.0 or higher.
-- Kubernetes provider v2.23.0 or higher.
+- [Puzl kubernetes provider](https://registry.terraform.io/providers/puzl-cloud/kubernetes) v2.38.0 or higher.
 
 ## Usage
 
